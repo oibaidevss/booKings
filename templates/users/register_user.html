@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row">
+	<div class="col-sm-4 offset-sm-4">
+		<form action=".?next={{ redirect_to }}" method="post">
+			{% csrf_token %}
+			<h3>{{title|title}}</h3>
+			{{form|crispy}}
+			<input type="submit" value="Register" class="btn btn-primary btn-block">
+			<hr>
+		</form>
+	</div>
+</div>
+{% endblock %}
