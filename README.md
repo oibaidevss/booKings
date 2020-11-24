@@ -1,6 +1,4 @@
 # Django Installation
-Prerequisite before installation
- [] Python 3.8 installed
  
 + pip install virtualenv
 + virtualenv django
